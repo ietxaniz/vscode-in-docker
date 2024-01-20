@@ -16,5 +16,8 @@ docker run --rm -d \
     -v $DOCKER_XAUTHORITY:$DOCKER_XAUTHORITY:ro \
     -v ./home:/home/vscodeuser \
     -v ./Documents:/home/vscodeuser/Documents \
+    -v ./home:/home/$USER \
+    -v ./Documents:/home/$USER/Documents \
     -e HOME=/home/vscodeuser \
+    -e USER=vscodeuser \
     inigoetxaniz/vscode-go:latest 

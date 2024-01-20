@@ -1,5 +1,5 @@
 # Start from the base image you created for VSCode
-FROM vscode:latest
+FROM inigoetxaniz/vscode-base:latest
 
 USER root
 
